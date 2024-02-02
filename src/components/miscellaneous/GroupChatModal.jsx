@@ -41,7 +41,7 @@ const GroupChatModal = ({ children }) => {
     try {
       setLoading(true);
 
-      const response = await fetch(`/api/user?search=${search}`, {
+      const response = await fetch(`https://chatapp-front-end.onrender.com/api/user?search=${search}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -77,7 +77,7 @@ const GroupChatModal = ({ children }) => {
     }
 
     try {
-      const response = await fetch("/api/chat/group", {
+      const response = await fetch("https://chatapp-front-end.onrender.com/api/chat/group", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${user.token}`,
