@@ -69,7 +69,7 @@ const SideDrawer = () => {
     try {
       setLoading(true);
 
-      const response = await fetch(`https://chat-frontend-ne1v.onrender.com/api/user?search=${search}`, {
+      const response = await fetch(`https://chatapp-front-end.onrender.com/api/user?search=${search}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -97,7 +97,7 @@ const SideDrawer = () => {
     try {
       setLoadingChat(true);
 
-      const response = await fetch(`https://chat-frontend-ne1v.onrender.com/api/chat`, {
+      const response = await fetch(`https://chatapp-front-end.onrender.com/api/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
