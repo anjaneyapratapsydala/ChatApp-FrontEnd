@@ -41,7 +41,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     try {
       setLoading(true);
 
-      const response = await fetch(`/api/message/${selectedChat._id}`, {
+      const response = await fetch(`https://chatapp-front-end.onrender.com/api/message/${selectedChat._id}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${user.token}`,
