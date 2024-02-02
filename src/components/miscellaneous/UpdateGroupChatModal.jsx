@@ -52,7 +52,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
     try {
       setLoading(true);
 
-      const response = await fetch("/api/chat/groupremove", {
+      const response = await fetch("https://chatapp-front-end.onrender.com/api/chat/groupremove", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -112,7 +112,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
     try {
       setLoading(true);
 
-      const response = await fetch("/api/chat/groupadd", {
+      const response = await fetch("https://chatapp-front-end.onrender.com/api/chat/groupadd", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -150,7 +150,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
     try {
       setRenameLoading(true);
 
-      const response = await fetch("/api/chat/rename", {
+      const response = await fetch("https://chatapp-front-end.onrender.com/api/chat/rename", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -193,7 +193,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
     try {
       setLoading(true);
 
-      const response = await fetch(`/api/user?search=${search}`, {
+      const response = await fetch(`https://chatapp-front-end.onrender.com/api/user?search=${search}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${user.token}`,
