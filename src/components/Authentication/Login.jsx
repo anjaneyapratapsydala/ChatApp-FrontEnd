@@ -45,7 +45,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch("https://chatapp-front-end.onrender.com//api/user/login", {
+      const response = await fetch("https://chatapp-front-end.onrender.com/api/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
