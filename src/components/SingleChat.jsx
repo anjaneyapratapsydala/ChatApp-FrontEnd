@@ -108,7 +108,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       try {
         setNewMessage(""); // Clear message field before making API call (won't affect API call as the function is asynchronous)
 
-        const response = await fetch("/api/message", {
+        const response = await fetch("https://chatapp-front-end.onrender.com/api/message", {
           method: "POST",
           headers: {
             Authorization: `Bearer ${user.token}`,
