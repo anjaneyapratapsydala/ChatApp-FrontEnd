@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route path="https://chatapp-front-end.onrender.com/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="https://chatapp-front-end.onrender.com/chats" element={<Chat />} />
 
         {/* If the user enters an invalid path in the URL it automatically redirects them to the homepage */}
